@@ -7,8 +7,8 @@ const styles = {
   appWrapper: {
     margin: "auto",
     fontFamily: "DM Sans",
-    padding: 40,
-    paddingTop: 10,
+    padding: 25,
+    paddingTop: 20,
     backgroundColor: "#f7f7f7",
     color: "#333",
   },

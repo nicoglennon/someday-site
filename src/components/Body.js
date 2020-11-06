@@ -8,39 +8,75 @@ const styles = {
     alignItems: "center",
     margin: "auto",
     justifyContent: "space-between",
+    alignContent: "stretch",
     flexWrap: "wrap",
   },
-  heroImage: {
+  heroImageWrapper: {
     maxWidth: 470,
+    margin: "auto",
+  },
+  imageWrapper: {
+    textAlign: "center",
+  },
+  heroImage: { maxWidth: "100%" },
+  downloadImage: {
+    cursor: "not-allowed",
+    width: 240,
+    opacity: 0.1,
   },
   sloganText: {
-    fontSize: 90,
+    marginTop: 60,
+    marginBottom: 20,
+    lineHeight: 0.9,
+  },
+  sloganFlexChild: {
+    fontSize: 30,
+    textAlign: "center",
+  },
+  flexChild: {
+    margin: "auto",
+    paddingBottom: 10,
+    width: "100%",
+    textAlign: "center",
+  },
+  comingSoon: {
+    position: "relative",
+    width: "fit-content",
+    fontWeight: 700,
     marginTop: 0,
-    marginBottom: 25,
-    lineHeight: 1,
+    marginBottom: 0,
+    fontSize: 42,
+    zIndex: 1,
+    top: 65,
+    cursor: "not-allowed",
+    margin: "auto",
   },
-  spacer: {
-    width: 40,
-  },
-  flexChild: { margin: "auto" },
 };
 
 export default function Body() {
   return (
     <div style={styles.bodyWrapper}>
-      <div style={styles.flexChild}>
-        <h1 style={styles.sloganText}>
-          take it <br />
+      <div
+        style={{ ...styles.flexChild, ...styles.sloganFlexChild }}
+        id="hero-text-flex"
+      >
+        <h1 style={styles.sloganText} id="slogan-text">
+          Take it <br />
           one day <br />
           at a time.
         </h1>
-        <div>
-          <img src={DownloadButton} style={{ width: 275 }} />
-        </div>
       </div>
       <div style={styles.spacer}></div>
       <div style={styles.flexChild}>
-        <img src={HeroImage} alt="App Preview" style={styles.heroImage} />
+        <div style={styles.heroImageWrapper}>
+          <img src={HeroImage} alt="App Preview" style={styles.heroImage} />
+        </div>
+      </div>
+      <div style={styles.flexChild}>
+        <p style={styles.comingSoon}>coming soon</p>
+        <div style={styles.imageWrapper}>
+          <img src={DownloadButton} style={styles.downloadImage} />
+        </div>
       </div>
     </div>
   );
