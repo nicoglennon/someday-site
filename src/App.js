@@ -1,7 +1,22 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import "./App.css";
+import { Header, Body, Footer } from "./components";
 
+const styles = {
+  appWrapper: {
+    margin: "auto",
+    fontFamily: "DM Sans",
+    padding: 40,
+    paddingTop: 10,
+    backgroundColor: "#f7f7f7",
+    color: "#333",
+  },
+  innerAppWrapper: {
+    maxWidth: 950,
+    margin: "auto",
+  },
+};
 function App() {
   const [date, setDate] = useState(null);
   useEffect(() => {
@@ -12,7 +27,15 @@ function App() {
     // }
     // getDate();
   }, []);
-  return <main>someday</main>;
+  return (
+    <div style={styles.appWrapper}>
+      <div style={styles.innerAppWrapper}>
+        <Header />
+        <Body />
+        <Footer />
+      </div>
+    </div>
+  );
 }
 
 export default App;
