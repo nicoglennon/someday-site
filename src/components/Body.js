@@ -61,7 +61,6 @@ export default function Body() {
         id="hero-text-flex"
       >
         <h1 style={styles.sloganText} id="slogan-text">
-          Take it <br />
           one day <br />
           at a time.
         </h1>

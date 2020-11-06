@@ -44,18 +44,27 @@ export default function Footer() {
         <a
           style={styles.footerLink}
           href="https://testflight.apple.com/join/If8fFbS5"
+          target="_blank"
         >
           testflight
         </a>
         <p style={styles.spacer}>·</p>
-        <a style={styles.footerLink} href="mailto:nico@someday.im">
+        <a
+          style={styles.footerLink}
+          href="mailto:nico@someday.im"
+          target="_blank"
+        >
           contact
         </a>
       </div>
       <div style={styles.sideWrapper}>
         <p style={styles.footerText}>
           built by{" "}
-          <a style={styles.nicoLink} href="https://twitter.com/nicoglennon">
+          <a
+            style={styles.nicoLink}
+            href="https://twitter.com/nicoglennon"
+            target="_blank"
+          >
             Nico
           </a>
         </p>

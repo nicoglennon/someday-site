@@ -22,9 +22,11 @@ a {
   cursor: pointer;
   text-decoration: none;
   transition: all 0.2s ease;
+  color: inherit;
 }
 a:hover {
   opacity: 0.7;
+  color: inherit;
   /* text-decoration: underline; */
 }
 a:visited {
