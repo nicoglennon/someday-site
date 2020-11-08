@@ -1,8 +1,8 @@
 import React from "react";
-import { useEffect, useState } from "react";
 import "./App.css";
 import { Header, Body, Footer } from "./components";
-
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import PrivacyModal from "./components/PrivacyModal";
 const styles = {
   appWrapper: {
     margin: "auto",
@@ -18,21 +18,17 @@ const styles = {
   },
 };
 function App() {
-  const [date, setDate] = useState(null);
-  useEffect(() => {
-    // async function getDate() {
-    //   const res = await fetch('/api/date');
-    //   const newDate = await res.text();
-    //   setDate(newDate);
-    // }
-    // getDate();
-  }, []);
   return (
     <div style={styles.appWrapper}>
       <div style={styles.innerAppWrapper}>
-        <Header />
-        <Body />
-        <Footer />
+        <Router>
+          <Header />
+          <Body />
+          <Footer />
+          <Route exact path="/privacy">
+            <PrivacyModal />
+          </Route>
+        </Router>
       </div>
     </div>
   );

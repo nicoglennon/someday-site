@@ -1,7 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 const styles = {
   footerWrapper: {
-    margin: 25,
+    margin: 10,
     marginBottom: 20,
     marginTop: 30,
     textAlign: "center",
@@ -21,6 +23,7 @@ const styles = {
     display: "flex",
     padding: 10,
     flexWrap: "wrap",
+    textAlign: "center",
   },
   footerText: {
     margin: 0,
@@ -29,12 +32,14 @@ const styles = {
   },
   spacer: {
     margin: 0,
-    fontSize: 20,
+    fontSize: 18,
     marginLeft: 10,
     marginRight: 10,
   },
   footerLink: {
     color: "#333",
+    fontSize: 18,
+    margin: 0,
   },
 };
 export default function Footer() {
@@ -49,11 +54,11 @@ export default function Footer() {
           testflight
         </a>
         <p style={styles.spacer}>·</p>
-        <a
-          style={styles.footerLink}
-          href="mailto:nico@someday.im"
-          target="_blank"
-        >
+        <Link to="/privacy">
+          <p style={styles.footerLink}>privacy</p>
+        </Link>
+        <p style={styles.spacer}>·</p>
+        <a style={styles.footerLink} href="mailto:nico@someday.im">
           contact
         </a>
       </div>

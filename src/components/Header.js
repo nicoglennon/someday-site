@@ -24,12 +24,10 @@ const styles = {
 export default function Header() {
   return (
     <div style={styles.headerWrapper}>
-      <a href="/">
-        <div style={styles.section}>
-          <img src={HeaderImage} alt="someday" style={styles.headerImage} />
-          <h1 style={styles.logoTitle}>someday</h1>
-        </div>
-      </a>
+      <div style={styles.section}>
+        <img src={HeaderImage} alt="someday" style={styles.headerImage} />
+        <h1 style={styles.logoTitle}>someday</h1>
+      </div>
     </div>
   );
 }
