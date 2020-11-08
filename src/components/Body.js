@@ -17,12 +17,11 @@ const styles = {
   },
   imageWrapper: {
     textAlign: "center",
+    marginTop: 40,
   },
   heroImage: { maxWidth: "100%" },
   downloadImage: {
-    cursor: "not-allowed",
-    width: 240,
-    opacity: 0.1,
+    width: 250,
   },
   sloganText: {
     marginTop: 60,
@@ -72,9 +71,14 @@ export default function Body() {
         </div>
       </div>
       <div style={styles.flexChild}>
-        <p style={styles.comingSoon}>coming soon</p>
         <div style={styles.imageWrapper}>
-          <img src={DownloadButton} style={styles.downloadImage} />
+          <a href="https://apps.apple.com/us/app/someday-one-day-at-a-time/id1537662355">
+            <img
+              src={DownloadButton}
+              style={styles.downloadImage}
+              id="download-btn"
+            />
+          </a>
         </div>
       </div>
     </div>
