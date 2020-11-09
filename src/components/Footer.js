@@ -5,7 +5,7 @@ const styles = {
   footerWrapper: {
     margin: 10,
     marginBottom: 20,
-    marginTop: 30,
+    marginTop: 10,
     textAlign: "center",
     fontWeight: 700,
     color: "#777",
