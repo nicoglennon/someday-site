@@ -17,8 +17,8 @@ const styles = {
   },
   imageWrapper: {
     textAlign: "center",
-    marginTop: 40,
-    marginBottom: 20,
+    marginTop: 30,
+    marginBottom: 40,
   },
   heroImage: { maxWidth: "100%" },
   downloadImage: {
@@ -64,6 +64,14 @@ export default function Body() {
           one day <br />
           at a time.
         </h1>
+      </div>
+      <div style={styles.spacer}></div>
+      <div style={styles.flexChild}>
+        <div style={styles.heroImageWrapper}>
+          <img src={HeroImage} alt="App Preview" style={styles.heroImage} />
+        </div>
+      </div>
+      <div style={styles.flexChild}>
         <div style={styles.imageWrapper}>
           <a href="https://apps.apple.com/us/app/someday-one-day-at-a-time/id1537662355">
             <img
@@ -73,14 +81,6 @@ export default function Body() {
             />
           </a>
         </div>
-      </div>
-      <div style={styles.spacer}></div>
-      <div style={styles.flexChild}>
-        <div style={styles.heroImageWrapper}>
-          <img src={HeroImage} alt="App Preview" style={styles.heroImage} />
-        </div>
-      </div>
-      <div style={styles.flexChild}>
         <div style={styles.imageWrapper}>
           <a
             href="https://www.producthunt.com/posts/someday?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-someday"
