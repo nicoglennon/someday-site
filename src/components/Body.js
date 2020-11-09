@@ -81,17 +81,6 @@ export default function Body() {
             />
           </a>
         </div>
-        <div style={styles.imageWrapper}>
-          <a
-            href="https://www.producthunt.com/posts/someday?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-someday"
-            target="_blank"
-          >
-            <img
-              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=274095&theme=dark"
-              alt="someday - take it one day at a time | Product Hunt"
-            />
-          </a>
-        </div>
       </div>
     </div>
   );
