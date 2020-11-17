@@ -48,10 +48,10 @@ export default function Footer() {
       <div style={styles.sideWrapper}>
         <a
           style={styles.footerLink}
-          href="https://testflight.apple.com/join/If8fFbS5"
+          href="https://twitter.com/nicoglennon"
           target="_blank"
         >
-          testflight
+          twitter
         </a>
         <p style={styles.spacer}>·</p>
         <Link to="/privacy">
@@ -65,11 +65,7 @@ export default function Footer() {
       <div style={styles.sideWrapper}>
         <p style={styles.footerText}>
           built by{" "}
-          <a
-            style={styles.nicoLink}
-            href="https://twitter.com/nicoglennon"
-            target="_blank"
-          >
+          <a style={styles.nicoLink} href="https://nico.gl" target="_blank">
             Nico
           </a>
         </p>
